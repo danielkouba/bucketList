@@ -17,6 +17,9 @@
 		A30602E91DF77722009A4BD1 /* MissionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30602E81DF77722009A4BD1 /* MissionDetailsViewController.swift */; };
 		A30602EB1DF77B1B009A4BD1 /* CancelButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30602EA1DF77B1A009A4BD1 /* CancelButtonDelegate.swift */; };
 		A30602ED1DF782BC009A4BD1 /* MissionDetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30602EC1DF782BC009A4BD1 /* MissionDetailsViewControllerDelegate.swift */; };
+		A3A0C3811DF88C5500553323 /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A0C37F1DF88C5500553323 /* BucketList.xcdatamodeld */; };
+		A3A0C3841DF88DAB00553323 /* Mission+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0C3821DF88DAB00553323 /* Mission+CoreDataClass.swift */; };
+		A3A0C3851DF88DAB00553323 /* Mission+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0C3831DF88DAB00553323 /* Mission+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		A30602E81DF77722009A4BD1 /* MissionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailsViewController.swift; sourceTree = "<group>"; };
 		A30602EA1DF77B1A009A4BD1 /* CancelButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButtonDelegate.swift; sourceTree = "<group>"; };
 		A30602EC1DF782BC009A4BD1 /* MissionDetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		A3A0C3801DF88C5500553323 /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
+		A3A0C3821DF88DAB00553323 /* Mission+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mission+CoreDataClass.swift"; path = "BucketList/Mission+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A3A0C3831DF88DAB00553323 /* Mission+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mission+CoreDataProperties.swift"; path = "BucketList/Mission+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		A30602AE1DF77094009A4BD1 = {
 			isa = PBXGroup;
 			children = (
+				A3A0C3821DF88DAB00553323 /* Mission+CoreDataClass.swift */,
+				A3A0C3831DF88DAB00553323 /* Mission+CoreDataProperties.swift */,
 				A30602B91DF77094009A4BD1 /* BucketList */,
 				A30602CE1DF77095009A4BD1 /* BucketListTests */,
 				A30602D91DF77095009A4BD1 /* BucketListUITests */,
@@ -112,6 +120,7 @@
 				A30602E81DF77722009A4BD1 /* MissionDetailsViewController.swift */,
 				A30602EA1DF77B1A009A4BD1 /* CancelButtonDelegate.swift */,
 				A30602EC1DF782BC009A4BD1 /* MissionDetailsViewControllerDelegate.swift */,
+				A3A0C37F1DF88C5500553323 /* BucketList.xcdatamodeld */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -271,7 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A0C3851DF88DAB00553323 /* Mission+CoreDataProperties.swift in Sources */,
 				A30602BD1DF77094009A4BD1 /* BucketListViewController.swift in Sources */,
+				A3A0C3811DF88C5500553323 /* BucketList.xcdatamodeld in Sources */,
+				A3A0C3841DF88DAB00553323 /* Mission+CoreDataClass.swift in Sources */,
 				A30602ED1DF782BC009A4BD1 /* MissionDetailsViewControllerDelegate.swift in Sources */,
 				A30602E91DF77722009A4BD1 /* MissionDetailsViewController.swift in Sources */,
 				A30602EB1DF77B1B009A4BD1 /* CancelButtonDelegate.swift in Sources */,
@@ -526,6 +538,7 @@
 				A30602E11DF77095009A4BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30602E21DF77095009A4BD1 /* Build configuration list for PBXNativeTarget "BucketListTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +547,7 @@
 				A30602E41DF77095009A4BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30602E51DF77095009A4BD1 /* Build configuration list for PBXNativeTarget "BucketListUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,8 +556,22 @@
 				A30602E71DF77095009A4BD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3A0C37F1DF88C5500553323 /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3A0C3801DF88C5500553323 /* BucketList.xcdatamodel */,
+			);
+			currentVersion = A3A0C3801DF88C5500553323 /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A30602AF1DF77094009A4BD1 /* Project object */;
 }
