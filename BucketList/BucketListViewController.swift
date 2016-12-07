@@ -55,16 +55,24 @@ class BucketListViewController: UITableViewController, CancelButtonDelegate, Mis
     // Override Segue
     // Call Delegates
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "AddNewMission" {
+            
             let navigationController = segue.destinationViewController as! UINavigationController
             let controller = navigationController.topViewController as! MissionDetailsViewController
+            
+            
             controller.cancelButtonDelegate = self
             controller.delegate = self
+            
+            
         } else if segue.identifier == "EditMission" {
             let navigationController = segue.destinationViewController as! UINavigationController
             let controller = navigationController.topViewController as! MissionDetailsViewController
             controller.cancelButtonDelegate = self
             controller.delegate = self
+            
+            
             
             if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
                 //Send cell text
